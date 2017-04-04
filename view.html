@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Test</title>
+        <script src="view.js"></script>
+        <style>
+            #err {
+                color: red;
+                display: none;
+            }
+            .hex {
+                font-family: monospace;
+                margin-bottom: 20px;
+            }
+            .hex table {
+                background-color: #eee;
+                border: 1px solid #bbb;
+                padding: 8px;
+                border-radius: 5px;
+            }
+            .hex td:hover {
+                /*background-color: pink;*/
+                cursor: default;
+            }
+            .hex-highlight {
+                color: blue;
+            }
+            .hex-offset {
+                color: indigo;
+                padding-right: 10px;
+            }
+
+            .hex-null   { color: darkblue; }
+            .hex-number { color: darkgreen; }
+            .hex-letter { color: darkred; }
+
+            .hex-ascii {
+                color: #777;
+                padding-left: 10px;
+            }
+            caption {
+                margin-bottom: 5px;
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="err">Your browser isn't supported...</p>
+        <input type="file" id="upload" name="files[]" multiple />
+        <div id="output"></div>
+
+        <div class="hex" id="hex"></div>
+        <div class="hex" id="text"></div>
+    </body>
+</html>
